@@ -10,6 +10,7 @@ header {
     flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #E32CDD;
+    
 }
 
 header a {
@@ -30,6 +31,30 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
  }
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    height: 182px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.hero h2 {
+   margin: 10px 20px;
+   position: relative;
+   bottom: -125px;
+}
+
+.contact-info ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
 
 .content-box{
     margin: 40px 36px;
@@ -54,17 +79,42 @@ header nav ul li a {
 .content-box p {
     margin-left: 50px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    align-content: center;
    
 }
 
-h2{
+h3 {
     display: flex;
     flex: 1 15%;
     justify-content: flex-start;
+    
     border-right: 2px solid #000000;
     padding: 0 10px;
     margin: 20px 10px;
+}
+
+.project-1 {
+    padding: 20px 20px;
+    align-items: center;
+    width: 79%;
+}
+
+.project-1 img {
+  border: 3px solid #E32CDD;
+  width: 85%;  
+}
+
+.project1-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.project1-tag {
+    background-image:url(../images/tag.png);
+    
 }
 
 .flex-row {
