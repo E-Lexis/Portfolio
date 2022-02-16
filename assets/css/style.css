@@ -9,8 +9,14 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
-    background-color: #E32CDD;
-    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header a {
@@ -32,9 +38,15 @@ header nav ul li a {
     font-size: 1.55vw;
  }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .hero {
     background-image: url(../images/hero.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     height: 182px;
     display: flex;
     flex-wrap: wrap;
@@ -47,74 +59,52 @@ header nav ul li a {
    bottom: -125px;
 }
 
-.contact-info ul li {
-    display: inline;
-    text-decoration: none;
+.section-title {
+    margin: 35px auto 35px auto;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #a32dd9;
+    width: 60%;
+    text-align: center;
 }
 
-.contact-info a {
-    text-decoration: none;
-}
-
-.content-box{
-    margin: 40px 36px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.content-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.content-img {
-    flex: 1 12%;
-    margin-left: 50px;
-}
-
-.content-box p {
-    margin-left: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-   
-}
-
-h3 {
-    display: flex;
-    flex: 1 15%;
-    justify-content: flex-start;
-    
-    border-right: 2px solid #000000;
-    padding: 0 10px;
-    margin: 20px 10px;
-}
-
-.project-1 {
-    padding: 20px 20px;
-    align-items: center;
-    width: 79%;
-}
-
-.project-1 img {
-  border: 3px solid #E32CDD;
-  width: 85%;  
-}
-
-.project1-img {
+.aboutme-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.project1-tag {
-    background-image:url(../images/tag.png);
-    
+.aboutme-info img{
+    margin: auto;
+}
+
+.aboutme-text {
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project1 {
+    text-align: center;
+}
+
+.project1 img {
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid #a32dd9;
+}
+
+.project {
+    margin: 20px;
+    background: #a32dd9;
+    flex: 1;
 }
 
 .flex-row {
